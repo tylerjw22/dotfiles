@@ -1,0 +1,106 @@
+{
+  "layer": "top",
+  "position": "top",
+  "position": "top",
+  "margin-top": 12,
+  "margin-left": 12,
+  "margin-right": 12,
+  "margin-bottom": 0,
+  "spacing": 1,
+
+  "modules-left": ["clock", "hyprland/workspaces", "tray"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "temperature",
+    "memory",
+    "cpu",
+    "backlight",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "tray": {
+    "format": "[ {icon} ]",
+    "icon-size": 20,
+    "spacing": 10
+  },
+
+  "clock": {
+    "format": "[ 󰸗 {:%I:%M %p} ]",
+    "interval": 60,
+    "tooltip": true,
+    "tooltip-format": "{:%d %B %H:%M}"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "all-outputs": false,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}"
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C",
+    "critical-threshold": 80,
+    "format-icons": ["", "", ""]
+  },
+
+  "memory": {
+    "format": "󰫗 {used:0.1f}G",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": " {icon}",
+    "format-muted": " MUTE",
+    "format-icons": [
+      "[ ###### ]",
+      "[ ▓##### ]",
+      "[ ▓▓#### ]",
+      "[ ▓▓▓### ]",
+      "[ ▓▓▓▓## ]",
+      "[ ▓▓▓▓▓# ]",
+      "[ ▓▓▓▓▓▓ ]"
+    ],
+    "scroll-step": 1,
+    "on-click": "pavucontrol"
+  },
+
+  "backlight": {
+    "format": "󰃠 {icon}",
+    "format-icons": [
+      "[ ###### ]",
+      "[ ▓##### ]",
+      "[ ▓▓#### ]",
+      "[ ▓▓▓### ]",
+      "[ ▓▓▓▓## ]",
+      "[ ▓▓▓▓▓# ]",
+      "[ ▓▓▓▓▓▓ ]"
+    ],
+    "scroll-step": 1
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  }
+}
