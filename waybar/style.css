@@ -78,5 +78,5 @@ padding: 4px 12px;
 #memory,
 #pulseaudio,
 #backlight {
-color: #3b82f6;
+color: rgba(20, 184, 166, 0.93);
 }
